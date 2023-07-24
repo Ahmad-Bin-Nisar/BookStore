@@ -6,32 +6,37 @@
     <title>My Book Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico">
-    <link rel="script" href="javascript.js">
+
 </head>
 <header>
-    <div>
+    <div class ="container1">
         <img id = logo src="logo.png">
-        <h1 id = hdr>My BookStore</h1>
+        <h1 id = hdr>Book Hub</h1>
+        <img id = icon src="icon.png">
     </div>
-    <div class = container1>
+    <div class = container2>
         <nav>
-            <ul class = hdr>
-                <li class = hdr><a href="bookstore.html">Home</a></li>
-                <li class = hdr>Categories</li>
-                <li class = hdr><a href="ContactUs.html">Contact Us</a></li>
+            <ul class = navbar>
+                <li class = navbar><a onmouseover="changecolor(this)" onmouseleave="resetcolor(this)" href="bookstore.html">Home</a></li>
+                <li class = navbar><a onmouseover="changecolor(this)" onmouseleave="resetcolor(this)" href="#">Categories</a></li>
+                <li class = navbar><a onmouseover="changecolor(this)" onmouseleave="resetcolor(this)" href="ContactUs.html">Contact Us</a></li>
             </ul>
         </nav>
     </div>
 </header>
-<body style="background-image: background-image;">
-    <div id = "container2">
-        <button class = "prev" style="float: left;"><</button>
-       <img class ="frontimg"src="background.jpg" alt="hehe">
+<body style="background-color: rgb(165, 117, 117);">
+    <div id = "container3">
+    <main>
+        <img class ="frontimg"src="background.jpg" alt="hehe">
        <img class ="frontimg"src="background2.jpg" alt="hehe">
        <img class ="frontimg"src="background3.jpg" alt="hehe">
-       <button class = "next" style="float: right;">></button>
-       <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-       <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </main>
+        <button onclick="goPrev()" style="float: left;"><</button>
+       <button onclick="goNext()" style="float: right;">></button>
     </div>
+    <script src="javascript.js"></script>
 </body>
+<footer style="background-color: rgb(165, 117, 117);">
+    <h6>Copyrights Claim unde section 3369(A) of HoneyBunny</h6>
+</footer>
 </html>
